@@ -278,9 +278,13 @@ a.cv-download:hover {
   margin-top: 1.5rem;
   font-size: 0.82rem;
   color: var(--light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 .site-footer a { color: var(--light); }
 .site-footer a:hover { color: var(--accent); text-decoration: underline; }
+.footer-attr { font-size: 0.78rem; }
 
 /* ============================================================
    Responsive
