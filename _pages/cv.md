@@ -9,7 +9,6 @@ author_profile: true
 
 ### Education
 
-* Ph.D. in Sociology, Stanford University (in progress)
 * B.A. in Ethnicity, Race & Migration and Statistics & Data Science, Yale University, 2024
 
 ### Positions
