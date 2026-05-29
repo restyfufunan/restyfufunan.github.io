@@ -1,10 +1,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "YOUR NAME"
+title                    : "Resty Fufunan"
 title_separator          : "-"
-name                     : &name "YOUR NAME"
-description              : &description "YOUR NAME — [FIELD] at [INSTITUTION]"
+name                     : &name "Resty Fufunan"
+description              : &description "Resty Fufunan — Predoctoral Fellow at Stanford"
 url                      : https://restyfufunan.github.io
 baseurl                  : ""
 repository               : "restyfufunan/restyfufunan.github.io"
@@ -12,14 +12,14 @@ repository               : "restyfufunan/restyfufunan.github.io"
 # Site Author
 # Controls what appears in the sidebar. Leave a field blank to hide it.
 author:
-  avatar           : "profile.png"           # filename in /images/
-  name             : "YOUR NAME"
-  pronouns         :                          # e.g., "she/her"
-  bio              : "PhD Candidate in [FIELD] at [INSTITUTION]. I study [RESEARCH INTERESTS]."
-  location         : "CITY, STATE"
-  employer         : "YOUR INSTITUTION"
+  avatar           : "profile.jpg"            # filename in /images/
+  name             : "Resty Fufunan"
+  pronouns         : "he/him"
+  bio              : "Predoctoral Fellow at Stanford (SIESR & Sociology). Survey research on political attitudes among racial/ethnic and underrepresented groups, with a focus on AAPI communities."
+  location         : "Stanford, CA"
+  employer         : "Stanford University"
   uri              :                          # personal website other than this one
-  email            : "yourname@university.edu"
+  email            : "resty@stanford.edu"
 
   # Academic profiles
   googlescholar    :                          # https://scholar.google.com/citations?user=XXXX
@@ -27,7 +27,7 @@ author:
   ssrn             :                          # https://ssrn.com/author=XXXX
 
   # Code / software
-  github           : "YOUR_GITHUB_USERNAME"
+  github           : "restyfufunan"
 
   # Social media — fill in whichever you use, leave others blank
   bluesky          :                          # yourhandle.bsky.social

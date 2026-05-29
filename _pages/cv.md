@@ -9,19 +9,16 @@ author_profile: true
 
 ### Education
 
-* Ph.D. in FIELD, INSTITUTION, YEAR (expected)
-* M.A. in FIELD, INSTITUTION, YEAR
-* B.A. in FIELD, INSTITUTION, YEAR
+* Ph.D. in Sociology, Stanford University (in progress)
+* B.A. in Ethnicity, Race & Migration and Statistics & Data Science, Yale University, 2024
 
 ### Positions
 
-* YEAR–present: TITLE, INSTITUTION / DEPARTMENT
-* YEAR–YEAR: TITLE (e.g., Research Assistant), INSTITUTION
+* 2024–present: Predoctoral Fellow, Stanford Institute for Excellence in Survey Research (SIESR) & Department of Sociology, Stanford University
 
 ### Awards & Fellowships
 
 * YEAR: AWARD NAME, GRANTING INSTITUTION
-* YEAR: FELLOWSHIP NAME, GRANTING INSTITUTION
 
 ### Publications
 

@@ -1,6 +1,6 @@
 # restyfufunan.github.io
 
-Personal academic website for [YOUR NAME]. Built with [Jekyll](https://jekyllrb.com) and hosted on [GitHub Pages](https://pages.github.com). Design inspired by [Shiro Kuriwaki](https://www.shirokuriwaki.com/), [Molly Offer-Westort](https://mollyow.github.io/), and [Melody Y. Huang](https://melodyyhuang.com/).
+Personal academic website for [Resty Fufunan](https://restyfufunan.github.io). Built with [Jekyll](https://jekyllrb.com) and hosted on [GitHub Pages](https://pages.github.com). Design inspired by [Shiro Kuriwaki](https://www.shirokuriwaki.com/), [Molly Offer-Westort](https://mollyow.github.io/), and [Melody Y. Huang](https://melodyyhuang.com/).
 
 ## Running locally
 
