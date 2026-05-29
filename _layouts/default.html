@@ -1,31 +1,41 @@
 ---
-layout: compress
 ---
-
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title and page.title != "" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav">
+        {% for item in site.data.navigation.main %}
+          <a href="{{ item.url | relative_url }}"
+             class="nav-link{% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+        {% endfor %}
+      </nav>
     </div>
+  </header>
 
-    {% include scripts.html %}
+  <main>
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
 
-  </body>
+  <footer class="site-footer">
+    <div class="container">
+      {{ site.author.name }}{% if site.author.email %} &middot; <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>{% endif %}
+    </div>
+  </footer>
+</body>
 </html>

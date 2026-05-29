@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="hero">
+  <div class="hero-photo">
+    <img src="{{ '/images/' | append: site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
+  </div>
+  <div class="hero-bio">
+    <h1>{{ site.author.name }}</h1>
+    <p class="position">{{ site.author.employer }}</p>
+    <div class="contact-links">
+      {% if site.author.email %}
+        <a href="mailto:{{ site.author.email }}">Email</a>
+      {% endif %}
+      {% if site.author.googlescholar %}
+        <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
+      {% endif %}
+      {% if site.author.github %}
+        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+      {% endif %}
+      {% if site.author.twitter %}
+        <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener">Twitter</a>
+      {% endif %}
+      {% if site.author.bluesky %}
+        <a href="https://bsky.app/profile/{{ site.author.bluesky }}" target="_blank" rel="noopener">Bluesky</a>
+      {% endif %}
+      {% if site.author.linkedin %}
+        <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      {% endif %}
+      {% if site.author.ssrn %}
+        <a href="{{ site.author.ssrn }}" target="_blank" rel="noopener">SSRN</a>
+      {% endif %}
+    </div>
+    {{ content }}
+  </div>
+</div>

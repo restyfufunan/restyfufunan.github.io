@@ -1,0 +1,305 @@
+/* ============================================================
+   Custom theme — academic personal site
+   Fonts: Lora (serif) + Source Sans 3 (sans-serif)
+   ============================================================ */
+
+/* ---- Variables ---- */
+:root {
+  --accent:     #4a6fa5;   /* steel blue */
+  --text:       #222;
+  --muted:      #5a5a5a;
+  --light:      #888;
+  --border:     #e4e4e4;
+  --bg:         #fff;
+  --width:      820px;
+  --photo-w:    190px;
+}
+
+/* ---- Reset / base ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
+  font-size: 1.0625rem;   /* ~17px */
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--bg);
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---- Layout container ---- */
+.container {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ============================================================
+   Navigation
+   ============================================================ */
+.site-header {
+  padding: 1.3rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+.site-title:hover { color: var(--accent); text-decoration: none; }
+
+.site-nav { display: flex; gap: 2rem; align-items: baseline; }
+
+.nav-link {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--light);
+}
+.nav-link:hover,
+.nav-link.active { color: var(--accent); text-decoration: none; }
+
+/* ============================================================
+   Home page: two-column hero
+   ============================================================ */
+.hero {
+  display: grid;
+  grid-template-columns: var(--photo-w) 1fr;
+  gap: 2.75rem;
+  padding: 3rem 0 2.5rem;
+  align-items: start;
+}
+
+.hero-photo img {
+  width: 100%;
+  border-radius: 2px;
+  filter: grayscale(5%);
+}
+
+.hero-bio h1 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.hero-bio .position {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.1rem;
+  font-size: 0.88rem;
+  margin-bottom: 1.5rem;
+}
+.contact-links a { color: var(--accent); }
+.contact-links a:hover { text-decoration: underline; }
+
+.hero-bio p { margin-bottom: 0.85rem; }
+.hero-bio p:last-child { margin-bottom: 0; }
+
+/* ============================================================
+   Generic page content
+   ============================================================ */
+.page-wrap {
+  padding: 2.75rem 0 4rem;
+  max-width: 720px;
+}
+
+.page-wrap h1 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Section headings (used in CV and publications categories) */
+.page-wrap h2 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--light);
+  margin: 2.25rem 0 0.85rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Hide the <hr> that academicpages inserts after each h2 */
+.page-wrap hr { display: none; }
+
+.page-wrap h3 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 1.75rem 0 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-wrap p { margin-bottom: 0.75rem; }
+.page-wrap p:last-child { margin-bottom: 0; }
+
+.page-wrap ul,
+.page-wrap ol { margin: 0.25rem 0 0.75rem 1.4rem; }
+.page-wrap li { margin-bottom: 0.2rem; }
+
+.page-wrap strong { font-weight: 600; }
+.page-wrap em { font-style: italic; }
+
+/* ============================================================
+   Publications list
+   ============================================================ */
+
+/* Google Scholar note above the list */
+.page-wrap .wordwrap {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+/* Each publication entry */
+.pub-entry {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.pub-entry:last-child { border-bottom: none; }
+
+.pub-title-line { line-height: 1.45; }
+
+.pub-title-link {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--accent);
+}
+.pub-title-link:hover { text-decoration: underline; }
+
+/* Non-linked titles (works in progress) */
+span.pub-title-link {
+  color: var(--text);
+}
+
+.pub-details {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+  line-height: 1.5;
+}
+.pub-details em { font-style: italic; }
+
+.pub-excerpt {
+  font-size: 0.85rem;
+  color: var(--light);
+  margin-top: 0.2rem;
+  line-height: 1.5;
+}
+
+.pub-links {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.75rem;
+}
+.pub-links a {
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+}
+.pub-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+/* ============================================================
+   CV page
+   ============================================================ */
+
+/* PDF download button — use <a class="cv-download"> in cv.md */
+a.cv-download {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  padding: 0.25rem 0.85rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+a.cv-download:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CV bullet items */
+.page-wrap ul li { color: var(--text); }
+
+/* ============================================================
+   Data & Code page
+   ============================================================ */
+.page-wrap strong + em,
+.page-wrap strong { color: var(--text); }
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.4rem 0;
+  margin-top: 1.5rem;
+  font-size: 0.82rem;
+  color: var(--light);
+}
+.site-footer a { color: var(--light); }
+.site-footer a:hover { color: var(--accent); text-decoration: underline; }
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 640px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 0 1.5rem;
+    gap: 1.5rem;
+  }
+  .hero-photo { max-width: 150px; }
+  .hero-bio h1 { font-size: 1.5rem; }
+
+  .site-header .container {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  .site-nav { gap: 1.25rem; }
+
+  .page-wrap { padding: 2rem 0 3rem; }
+}
