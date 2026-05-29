@@ -5,23 +5,18 @@ permalink: /data/
 author_profile: true
 ---
 
+## Projects
+
+**[Public Pulse](https://publicpulse.stanford.edu/)** — A Stanford project producing neutral, evidence-based, systematic reports on American public opinion across key policy issues at the forefront of legislative, policy, and journalistic debate. Reports synthesize existing published survey research and follow a standardized format assessing where opinion stands, data availability and confidence, question wording effects, public knowledge, cross-survey conflicts, and areas of uncertainty. I contribute to the project as a Predoctoral Fellow at SIESR.
+
+---
+
+## Code
+
+**[gss-mode-weights](https://github.com/restyfufunan/gss-mode-weights)** — R code and mode-specific post-stratification weights for the 2022 and 2024 General Social Survey. Companion to Fufunan, Jin, and Freese (2026).
+
+---
+
 ## Datasets
 
-**DATASET NAME** — [BRIEF DESCRIPTION, 1 sentence]  
-[Download](/files/dataset1.csv) &nbsp;|&nbsp; [Codebook](/files/codebook1.pdf) &nbsp;|&nbsp; [Replication code](https://github.com/YOUR_GITHUB_USERNAME/REPO)
-
----
-
-**DATASET NAME** — [BRIEF DESCRIPTION, 1 sentence]  
-[Download](/files/dataset2.csv) &nbsp;|&nbsp; [GitHub](https://github.com/YOUR_GITHUB_USERNAME/REPO)
-
----
-
-## Software / Packages
-
-**PACKAGE NAME** — [BRIEF DESCRIPTION, 1 sentence]  
-[GitHub](https://github.com/YOUR_GITHUB_USERNAME/REPO) &nbsp;|&nbsp; [Documentation](https://LINK)
-
----
-
-*Remove any sections above that don't apply. Add or duplicate blocks as needed.*
+*Coming soon.*
